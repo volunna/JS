@@ -49,16 +49,30 @@ console.log(counter());
 
 
 
+// var twoSum = function(nums, target) {
+//     for (let i = 0; i < nums.lengs; i++ ){
+//       for (let j = i + 1; j < nums.lengs; j++){
+//         if (nums[i] + nums[j] == target){
+//           return [i,j];
+//         }
+//       }
+//     }
+// };
+
+// let two=twoSum([2,7,11,15],9);
+// console.log(two);
+
 var twoSum = function(nums, target) {
-    for (let i = 0; i < nums.lengs; i++ ){
-      for (let j = i + 1; j < nums.lengs; j++){
-        if (nums[i] + nums[j] == target){
-          return [i , j];
-        }
+  for (let i = 0; i < nums.length; i++) {  
+    for (let j = i + 1; j < nums.length; j++) {  
+      if (nums[i] + nums[j] === target) {
+        return [i, j];
       }
     }
+  }
+  return [];
 };
 
-let two=twoSum([2,7,11,15],9);
-console.log(two);
+let two = twoSum([2, 7, 11, 15], 9);
+console.log(two)
 
